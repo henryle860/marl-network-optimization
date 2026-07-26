@@ -42,7 +42,7 @@ University of Munich (TUM), Chair of Network Architectures and Services.*
 throughput recovery on the expanded tree topology (F1-Score: 0.794 vs. 0.201,
 single-seed evaluation, n=50 test runs with varying incident probabilities).
 
-![MARL vs SARL F1-Score](results/marl_vs_sarl_f1_score.pdf)
+![MARL vs SARL F1-Score](results/marl_vs_sarl_f1_score.png)
 
 **Why:** A single SARL agent has to handle the full, combined action and
 observation space of all 10 switches through one centralized reward signal —
@@ -59,7 +59,7 @@ easier.
 The system models an expanded tree topology with 1 root switch (s1) and
 9 leaf switches (s2–s10), each controlled by an independent PPO agent.
 
-![Network Topology](results/topology.pdf)
+![Network Topology](results/topology.png)
 
 | Component | Description |
 |---|---|
@@ -78,7 +78,7 @@ MARL (root + leaf agents) converges substantially faster than SARL on the
 expanded tree topology, reaching stable rewards within a few hundred episodes
 versus several thousand for SARL (single-seed evaluation).
 
-![Training Reward Curves](results/training_reward_curves.pdf)
+![Training Reward Curves](results/training_reward_curves.png)
 
 ---
 
@@ -88,7 +88,7 @@ After a manual qdisc drop to 10 Mbps at step 20, the trained agent detects the
 incident and recovers throughput to ~70 Mbps using consecutive INCREASE
 actions.
 
-![Throughput Recovery](results/throughput_recovery.pdf)
+![Throughput Recovery](results/throughput_recovery.png)
 
 ---
 
@@ -111,10 +111,10 @@ actions.
 ├── marl_expanded_tree_topology_simulation.py  # Main MARL training script
 ├── requirements.txt                           # Python dependencies
 ├── results/                                   # Evaluation plots
-│   ├── topology.pdf                           # Network topology diagram
-│   ├── training_reward_curves.pdf             # Reward convergence plot
-│   ├── throughput_recovery.pdf                # Agent behavior under incident
-│   └── marl_vs_sarl_f1_score.pdf             # MARL vs SARL comparison
+│   ├── topology.png                           # Network topology diagram
+│   ├── training_reward_curves.png             # Reward convergence plot
+│   ├── throughput_recovery.png                # Agent behavior under incident
+│   └── marl_vs_sarl_f1_score.png             # MARL vs SARL comparison
 └── README.md
 ```
 
