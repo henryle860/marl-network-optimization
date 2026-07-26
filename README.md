@@ -114,7 +114,7 @@ actions.
 │   ├── topology.png                           # Network topology diagram
 │   ├── training_reward_curves.png             # Reward convergence plot
 │   ├── throughput_recovery.png                # Agent behavior under incident
-│   └── marl_vs_sarl_f1_score.png             # MARL vs SARL comparison
+│   └── marl_vs_sarl_f1_score.png              # MARL vs SARL comparison
 └── README.md
 ```
 
