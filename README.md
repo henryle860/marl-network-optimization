@@ -9,7 +9,7 @@ space, to maximize network throughput under simulated network incidents.
 > evaluated as part of the Bachelor's thesis but are not included here.
 > Full reproduction requires a configured Mininet environment on Ubuntu 22.04
 > ARM64. Results shown are from a single-seed evaluation (50 test runs with
-> varying incident probabilities), not multiple independent seeds.
+> varying incident probabilities).
 
 ---
 
